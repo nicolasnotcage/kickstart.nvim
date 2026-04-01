@@ -12,3 +12,6 @@ spell/
 # lazy-lock.json
 
 .DS_Store
+
+# Ignores WSL-specific files
+*:Zone.Identifier
