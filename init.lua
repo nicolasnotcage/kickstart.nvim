@@ -977,5 +977,13 @@ require('lazy').setup({
   },
 })
 
+-- Custom autocmds
+
+-- Return focus to previous window after exiting a terminal session from within nvim
+vim.keymap.set('n', '<leader>tt', function()
+  vim.cmd 'split | terminal'
+  vim.cmd 'startinsert'
+end, { desc = 'Open terminal in split' })
+
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et
